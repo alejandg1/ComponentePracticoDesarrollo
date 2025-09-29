@@ -1,0 +1,88 @@
+# ===== DEPENDENCIAS =====
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# ===== ARCHIVOS DE ENTORNO =====
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# ===== LOGS =====
+logs/
+*.log
+
+# ===== BUILDS Y DISTRIBUCIÓN =====
+# React
+/form_react/build/
+# Vue
+/form_vue/dist/
+# General
+build/
+dist/
+
+# ===== DOCKER =====
+.dockerignore
+
+# ===== ARCHIVOS DEL SISTEMA OPERATIVO =====
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ===== IDE Y EDITORES =====
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.sublime-*
+
+# ===== CACHÉS Y TEMPORALES =====
+.tmp/
+.cache/
+.npm
+.eslintcache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+.parcel-cache/
+tmp/
+temp/
+
+# ===== TESTING Y COVERAGE =====
+coverage/
+.nyc_output
+/form_react/.pnp
+/form_react/.pnp.js
+
+# ===== POI ESPECÍFICO (Vue) =====
+.poi/
+bundle-report.html
+
+# ===== RUNTIME DATA =====
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# ===== YARN =====
+.yarn-integrity
+
+# ===== DOCUMENTOS GENERADOS =====
+*.tgz
+*.tar.gz
+
+# ===== ARCHIVOS ESPECÍFICOS DEL PROYECTO =====
+# Ignorar .dockerignore individuales (ya que usamos uno global)
+*/.dockerignore
+# Ignorar .gitignore individuales de subproyectos
+*/gitignore
