@@ -160,8 +160,8 @@ export default {
       rules: {
         dni: {
           message: "DNI is required",
-          pattern: /^\d{8}[A-Za-z]$/,
-          patternMessage: "DNI must be 8 digits followed by a letter"
+          pattern: /^\d{8}$/,
+          patternMessage: "DNI must be 8 digits"
         },
         nombre: {
           message: "Name is required",

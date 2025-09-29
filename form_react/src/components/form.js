@@ -153,7 +153,6 @@ const Form = () => {
         <div className="col-md-8 col-lg-6">
           <div className="card shadow">
             <div className="card-header bg-primary text-white">
-              <h3 className="card-title mb-0">User Registration</h3>
             </div>
             <div className="card-body">
               {showAlert && (
