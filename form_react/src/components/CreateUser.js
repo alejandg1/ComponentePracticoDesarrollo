@@ -6,7 +6,7 @@ import RadioButtons from "./radioBtn";
 const rules = {
   dni: {
     message: "DNI is required",
-    pattern: { value: /^\d{8}[A-Za-z]$/, message: "DNI must be 8 digits followed by a letter" },
+    pattern: { value: /^\d{10}$/, message: "DNI must be 10 digits" },
   },
   nombre: {
     message: "Name is required",

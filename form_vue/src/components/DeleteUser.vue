@@ -26,8 +26,8 @@
                   <span>{{ dniError }}</span>
                 </div>
               </div>
-              <button 
-                @click="searchUser" 
+              <button
+                @click="searchUser"
                 class="btn btn-primary"
                 :disabled="!searchDni || dniError"
               >
@@ -85,15 +85,15 @@ export default {
   },
   methods: {
     validateDni() {
-      const dniPattern = /^\d{8}[A-Za-z]$/;
-      
+      const dniPattern = /^\d{10}$/;
+
       if (!this.searchDni.trim()) {
         this.dniError = 'DNI is required';
         return;
       }
 
       if (!dniPattern.test(this.searchDni.trim())) {
-        this.dniError = 'DNI must be 8 digits followed by a letter';
+        this.dniError = 'DNI must be10 digits';
         return;
       }
 
@@ -108,7 +108,7 @@ export default {
         if (response.ok) {
           const users = await response.json();
           const user = users.find(u => u.dni === this.searchDni);
-          
+
           if (user) {
             this.userToDelete = user;
             this.userFound = true;
