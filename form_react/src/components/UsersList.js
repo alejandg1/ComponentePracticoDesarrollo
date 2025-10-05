@@ -53,7 +53,9 @@ const UsersList = ({ onEditUser, onUserDeleted }) => {
 
   const formatDate = (dateString) => {
     if (!dateString) return '';
-    return new Date(dateString).toLocaleDateString();
+    const date = dateString.split('T')[0];
+    const [year, month, day] = date.split('-');
+    return `${day}/${month}/${year}`;
   };
 
   const capitalizeText = (text) => {
